@@ -1,0 +1,92 @@
+.firstSection__container {
+  padding-bottom: 80px;
+}
+
+.section__up {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding-bottom: 3.75rem;
+}
+
+.section__up > h2 {
+  font-size: var(--font-2);
+  color: var(--color-grey-1);
+}
+
+.ul__container {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  padding: 0.625rem;
+  background-color: var(--color-grey-8);
+  border-radius: 0.3125rem;
+  transition: 0.3s;
+  border: 1.5px solid transparent;
+  color: var(--color-grey-2);
+}
+
+
+.buttons:hover {
+  background-color: var(--color-disable-fixed);
+  color: var(--color-grey-8);
+}
+
+.clickedButton {
+  background-color: var(--color-disable-fixed);
+  color: var(--color-grey-8);
+  border-radius: 0.3125rem;
+  transition: 0.3s;
+}
+
+.section__down {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.section__down-align {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__down-align > h2 {
+  font-size: var(--font-2);
+  color: var(--color-grey-2);
+}
+
+
+.align__pSpan {
+  display: flex;
+}
+
+.align__pSpan > p, span {
+  color: var(--color-grey-2);
+}
+
+.section__down > input {
+  cursor: pointer;
+  appearance: none;
+  background-color: #9747FF;
+  outline: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 9px;
+}
+
+.section__down > input::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 6px solid #9747FF;
+  background-color: white;
+  
+}
+
+
+

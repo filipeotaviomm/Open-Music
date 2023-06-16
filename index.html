@@ -1,18 +1,157 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="dark__mode" lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/firstSection.css" />
+    <link rel="stylesheet" href="./src/styles/secondSection.css" />
     <title>Open Music</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <div class="container">
+      <header>
+        <div class="header__align-items">
+          <h1>open music</h1>
+          <button>
+            <img src="./src/assets/img/moon.svg" alt="" />
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="firstSection__container">
+          <div class="section__up">
+            <h2>Gênero Musical</h2>
+            <ul class="ul__container">
+              <li>
+                <button class="buttons">Todos</button>
+              </li>
+              <li>
+                <button class="buttons">Pop</button>
+              </li>
+              <li>
+                <button class="buttons">MPB</button>
+              </li>
+              <li>
+                <button class="buttons">Forró</button>
+              </li>
+              <li>
+                <button class="buttons">Samba</button>
+              </li>
+              <li>
+                <button class="buttons">Baião</button>
+              </li>
+              <li>
+                <button class="buttons">Rap</button>
+              </li>
+              <li>
+                <button class="buttons">Hip-Hop</button>
+              </li>
+              <li>
+                <button class="buttons">Rock</button>
+              </li>
+              <li>
+                <button class="buttons">Reggae</button>
+              </li>
+              <li>
+                <button class="buttons">Country</button>
+              </li>
+              <li>
+                <button class="buttons">Gospel</button>
+              </li>
+            </ul>
+          </div>
+          <div class="section__down">
+            <div class="section__down-align">
+              <h2>Definir Preço</h2>
+              <div class="align__pSpan">
+                <p>Até R$</p>
+                <span class="price__range">0</span>
+              </div>
+            </div>
+            <input
+              id="rangeInput"
+              type="range"
+              min="0"
+              max="100"
+              step="0.1"
+              value="50"
+            />
+          </div>
+        </section>
+
+        <section class="secondSection__container">
+          <h2>Álbuns Encontrados</h2>
+          <ul class="ul__container-cards">
+            <li>
+              <div class="card">
+                <img src="./src/assets/img/1.jpg" alt="" />
+                <div class="card__inner">
+                  <div class="card__pSpan-align">
+                    <p>Scalene<span class="span__align">2017</span></p>
+                  </div>
+                  <h2>Magnetite</h2>
+                  <span>
+                    <p>R$70.00</p>
+                    <button>Comprar</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./src/assets/img/1.jpg" alt="" />
+                <div class="card__inner">
+                  <div class="card__pSpan-align">
+                    <p>Scalene<span class="span__align">2017</span></p>
+                  </div>
+                  <h2>Magnetite</h2>
+                  <span>
+                    <p>R$70.00</p>
+                    <button>Comprar</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./src/assets/img/1.jpg" alt="" />
+                <div class="card__inner">
+                  <div class="card__pSpan-align">
+                    <p>Scalene<span class="span__align">2017</span></p>
+                  </div>
+                  <h2>Magnetite</h2>
+                  <span>
+                    <p>R$70.00</p>
+                    <button>Comprar</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card">
+                <img src="./src/assets/img/1.jpg" alt="" />
+                <div class="card__inner">
+                  <div class="card__pSpan-align">
+                    <p>Scalene<span class="span__align">2017</span></p>
+                  </div>
+                  <h2>Magnetite</h2>
+                  <span>
+                    <p>R$70.00</p>
+                    <button>Comprar</button>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <!-- <script src="./src/scripts/theme.js"></script> -->
+    <!-- <script src="./src/scripts/productsData.js"></script> -->
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>
